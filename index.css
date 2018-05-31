@@ -1,16 +1,52 @@
-.menu {
-	font-size: 20px;
-	font-weight: bold;
+body {
+
+	background-color: #fff;
+}
+
+.header {
+	display: flex;
+	align-items: center;
 }
 
 .social {
+	margin-left: 80px;
+	display: flex;
+	flex-direction: row;
+}
+
+.social__item+.social__item {
+	margin-left: 10px;
+}
+
+.social__item {
+	/* TODО рассказать про флексы */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #636363;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+
+	color: white;
+}
+
+.social__item._facebook {
 
 }
 
-.social._twitter {
-
+.social__item._vk {
+	
 }
 
-body {
-	background-color: rgb(155, 193, 255);
+.social__item._twitter {
+	
 }
+
+.social__item._youtube {
+	
+}
+
+
+

@@ -4,42 +4,59 @@
 	 </html> - Закрывающий
 -->
 
+<!--
+1. div
+2. a - 
+3. button
+4. input
+5. img
+6. header
+7. main
+8. footer
+9. h1....h5
+10. ...
+-->
+
+<!-- БЭМ 
+	Б - блок
+	Э - элемент
+	М - модификатор
+
+	У блока есть элементы
+	У блока могут быть модификаторы
+	У элементов могут быть модификаторы
+	(!) У элементов не может быть элементов
+	(!) Блоки могут быть вложены в другие блоки
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Page</title>
+	<title>GSC Game World</title>
 	<link rel="stylesheet" type="text/css" href="./index.css">
 </head>
 <body>
-	<!-- Назвать по БЭМ -->
-	<div class="menu">
-		<div class="logo">logo</div>
+	<div class="header">
+		<div class="logo">
+			<img class="logo__image" src="images/logo.png" alt="Image error">
+		</div>
 		
-		<div class="socials">
-			<div class="social _facebook"></div>
-			<div class="social _vk"></div>
-			<div class="social _twitter"></div>
-			<div class="social _youtube"></div>
+		<div class="social">
+			<a class="social__item _facebook">FB</a>
+			<a class="social__item _vk">VK</a>
+			<a class="social__item _twiter">TW</a>
+			<a class="social__item _youtube">YT</a>
 		</div>
 
 		<div class="navigation">
-			<div class="main">Главная</div>
-			<div class="about">О нас</div>
-			<div class="games">Игры</div>
-			<div class="contacts">Обратная связь</div>
-			<div class="news">Новости</div>
-			<div class="forum">Форум</div>
-			<div class="old-site">Старый сайт</div>
-
-			<div class="langs">
-				<div class="lang _english"></div>
-				<div class="lang _ukrainian"></div>		
-			</div>
+			<a class="navigation__item"></a>
+			<a class="navigation__item"></a>
+			<a class="navigation__item"></a>
+			<a class="navigation__item"></a>
+			<a class="navigation__item"></a>
+			<a class="navigation__item"></a>
+			<a class="navigation__item"></a>
 		</div>
 	</div>
-
-	<a href="https://vk.com/stalkervimpel">
-		<input type="button" value="Go Google">
-	</a>
 </body>
 </html>
