@@ -1,10 +1,14 @@
 body {
 
 	background-color: #fff;
+	font-family: "Arial";
+	font-size: 15px;
 }
 
 .header {
 	display: flex;
+
+	flex-direction: row;
 	align-items: center;
 }
 
@@ -19,6 +23,7 @@ body {
 }
 
 .social__item {
+	
 	/* TODО рассказать про флексы */
 	display: flex;
 	justify-content: center;
@@ -32,21 +37,21 @@ body {
 	color: white;
 }
 
-.social__item._facebook {
-
-}
-
-.social__item._vk {
+.navigation {
+	margin-left: 100px;	
 	
 }
 
-.social__item._twitter {
+.navigation__item+.navigation__item {
+	
+	margin-left: 10px;
 	
 }
 
-.social__item._youtube {
-	
+.navigation__item	{
+	font-weight: 900;
 }
+
 
 
 
